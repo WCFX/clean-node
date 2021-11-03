@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Updated
 
--
+- Criamos no Whimsical a arquitetura do projeto. [Link](https://whimsical.com/clean-node-WE8HA5pYr69WVuzq6vEe5d)
 
 ## [0.0.01] - 02/11/2021
 
