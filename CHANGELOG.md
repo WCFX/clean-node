@@ -6,9 +6,21 @@ All notable changes to this project will be documented in this file.
 
 ### Updated
 
+-
+
+### Updated
+
 - Refatoração do test unitário onde passamos o tratamento de erro para o missing params.
 - Criação do helper onde irá demonstrar o erro de uma forma mais clara, ao invés de lidar
   com os statusCode diretamente.
+- Refatoramos as validações por um código mais limpo e simples.
+- Criando cenários de testes de do SignUp para:
+  {
+  - Name,
+  - Email,
+  - Password,
+  - PasswordConfirm
+    }
 
 ## [0.0.02] - 03/11/2021
 
