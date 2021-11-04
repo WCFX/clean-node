@@ -6,7 +6,9 @@
   "scripts": {
     "test": "jest --passWithNoTests",
     "test:staged": "jest --passWithNoTests --watch",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "lint": "eslint . --ext .ts"
   },
   "keywords": [],
   "author": "",
@@ -36,8 +38,7 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run prettier-format && npm run lint"
     }
   }
 }
