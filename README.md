@@ -2,3 +2,5 @@
 
 - Arquitetura do projeto criada.
   <img src="./public/assets/Architecture/pic.png" >
+
+  - Projeto utilizando JEST.
