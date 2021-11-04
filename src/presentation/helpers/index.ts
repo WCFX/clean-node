@@ -1,1 +1,1 @@
-export { default as HttpHelper } from './http-helper';
+export { badRequest } from './http-helper';
