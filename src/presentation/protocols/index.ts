@@ -1,2 +1,2 @@
-export type { HttpRequest } from './Http';
-export type { HttpResponse } from './Http';
+export type { HttpRequest } from './http';
+export type { HttpResponse } from './http';
