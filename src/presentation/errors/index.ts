@@ -1,3 +1,3 @@
-export { default as MissingParamError } from './missing-param-error';
-export { default as InvalidParamError } from './invalid-param-error';
-export { default as ServerError } from './server-error';
+export * from './missing-param-error';
+export * from './invalid-param-error';
+export * from './server-error';

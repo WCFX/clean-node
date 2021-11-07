@@ -37,4 +37,4 @@ class SignUpController implements Controller {
   }
 }
 
-export default SignUpController;
+export { SignUpController };
