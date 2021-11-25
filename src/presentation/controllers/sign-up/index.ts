@@ -25,13 +25,13 @@ class SignUpController implements Controller {
         'password',
         'passwordConfirmation',
       ];
-      const { name, email, password, passwordConfirmation } = httpRequest.body;
-
       for (const field of requiredField) {
         if (!httpRequest.body[field]) {
           return badRequest(new MissingParamError(field));
         }
       }
+      const { name, email, password, passwordConfirmation } = httpRequest.body;
+
       if (password !== passwordConfirmation) {
         return badRequest(new InvalidParamError('passwordConfirmation'));
       }
