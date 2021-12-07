@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --passWithNoTests",
-    "test:unit": "npm test -- --watch",
-    "test:staged": "jest --passWithNoTests",
+    "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
+    "test:verbose": "jest --passWithNoTests --runInBand",
+    "test:unit": "npm test -- --watch -c jest-unit-config.js",
+    "test:integration": "npm test -- --watch -c jest-integration-config.js",
+    "test:staged": "npm test -- --findRelatedTests",
+    "test:ci": "npm test -- --coverage",
     "prepare": "husky install",
     "prettier-format": "prettier --config prettier.config.js 'src/**/*.ts' --write",
     "lint": "eslint . --ext .ts"
@@ -37,9 +40,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run prettier-format && npm run lint",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-push": "npm run test"
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run test:ci"
     }
   },
   "lint-staged": {
