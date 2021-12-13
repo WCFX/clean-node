@@ -2,11 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.0.03] - 04/11/2021
+## [0.0.03] - 06/11/2021
 
 ### Updated
 
--
+- Testando cenários de testes para o signup
+
+## [0.0.03] - 04/11/2021
 
 ### Updated
 

@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
   roots: ['<rootDir>/src'],
   coverageDirectory: 'coverage',
