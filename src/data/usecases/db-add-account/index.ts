@@ -1,7 +1,7 @@
 import { AccountModel, AddAccount, AddAccountModel } from '../../../domain';
 import { Encrypter } from '../..';
 
-export class DbAccount implements AddAccount {
+export class DbAddAccount implements AddAccount {
   private readonly encrypter: Encrypter;
   constructor(encrypter: Encrypter) {
     this.encrypter = encrypter;
