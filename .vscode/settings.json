@@ -1,0 +1,285 @@
+{
+  // ! Config de Flutter     <---------
+
+  "dart.autoImportCompletions": true,
+  "dart.warnWhenEditingFilesOutsideWorkspace": true,
+  "dart.checkForSdkUpdates": true,
+  "dart.previewFlutterUiGuides": true,
+  "dart.previewFlutterUiGuidesCustomTracking": true,
+
+  // ! Configurações do VSCODE
+
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "terminal.integrated.cursorBlinking": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.tabSize": 2,
+  "editor.fontSize": 15,
+  "editor.lineHeight": 26,
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontWeight": "500",
+  "editor.fontLigatures": true,
+  "editor.snippetSuggestions": "top",
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+
+  // ! Configurações TODOHighlight
+  "todohighlight.isEnable": true,
+  "todohighlight.keywords": [
+    {
+      "text": " NOTES: ",
+      "color": "#FFF",
+      "width": "1000px",
+      "fontWeight": "bold",
+      "borderRadius": "12px", //N
+      "backgroundColor": "#f00279",
+      "overviewRulerColor": "#FFF"
+    },
+    {
+      "text": " TODO: ",
+      "color": "#000000",
+      "width": "1000px",
+      "fontWeight": "bold",
+      "borderRadius": "12px", //NOTE: using borderRadius along with `border` or you will see nothing change
+      "backgroundColor": "#dbdb00"
+      //other styling properties goes here ...
+    }
+  ],
+
+  // ! Files Exclude VSCODE <------------
+
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "node_modules": false,
+    ".gitignore": false,
+    ".gitattributes": true,
+    ".buckconfig": true,
+    ".flowconfig": true,
+    "babel.config.js": false,
+    "metro.config.js": false,
+    "yarn.lock": true,
+    ".watchmanconfig": true,
+    "__tests__": true,
+
+    // ! Configs Exclude Modules React Native  <----------------
+
+    "app.json": false,
+    "package.json": false,
+    ".eslintrc.js": false,
+    ".eslintrc.json": false,
+    "jest.config.js": false,
+    ".prettierrc.js": false,
+    ".eslintignore": false,
+    "prettier.config.js": false,
+    ".expo-shared": true,
+    "assets": false,
+    ".expo": false,
+    ".vscode": false,
+    "tsconfig.json": false,
+    ".editorconfig": false,
+    "react-native.config.js": false,
+
+    // ! Configs Exclude Modules Flutter <----------------
+    ".dart_tool": true,
+    "web": true,
+    ".flutter-plugins": true,
+    ".flutter-plugins-dependencies": true,
+    ".metadata": true,
+    ".packages": true,
+    "test": false,
+    "build": true,
+    ".idea": true,
+    "ios": false,
+    "android": false
+  },
+
+  // ! <-------------------------------------------->
+
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ],
+
+  "explorer.compactFolders": false,
+  "editor.renderLineHighlight": "gutter",
+  "workbench.editor.labelFormat": "short",
+  "extensions.ignoreRecommendations": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "html",
+    "typescriptreact",
+    "js",
+    "tsx",
+    "ts"
+  ],
+  "editor.parameterHints.enabled": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "editor.rulers": [80, 120],
+  "[javascript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true,
+      "source.fixAll.eslint": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true
+  },
+  "files.associations": {
+    ".sequelizerc": "javascript",
+    ".stylelintrc": "json",
+    ".prettierrc": "json",
+    ".prettier.config": "javascript"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "git.enableSmartCommit": true,
+  "typescript.tsserver.log": "off",
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "screencastMode.onlyKeyboardShortcuts": true,
+  "material-icon-theme.folders.associations": {
+    "infra": "app",
+    "entities": "class",
+    "schemas": "class",
+    "typeorm": "database",
+    "repositories": "mappings",
+    "http": "container",
+    "migrations": "tools",
+    "modules": "components",
+    "implementations": "core",
+    "dtos": "typescript",
+    "fakes": "mock",
+    "websockets": "pipe",
+    "protos": "pipe",
+    "grpc": "pipe",
+    "ormconfig.json": "database",
+    "tsconfig.json": "tune",
+    "*.proto": "3d",
+    "reducers": "Redux-reducer",
+    "actions": "Resource",
+    "assets": "Upload",
+    "Home": "React-components",
+    "Login": "React-components",
+    "Main": "React-components",
+    "Quiz": "React-components",
+    "Resume": "React-components",
+    "SignIn": "React-components",
+    "SignUp": "React-components",
+    "Dashboard": "React-components",
+    "Profile": "React-components",
+    "Search": "React-components",
+    "Appointments": "React-components",
+    "Favorites": "React-components",
+    "sign-in": "React-components",
+    "sign-up": "React-components",
+    "components": "Components",
+    "data": "Mock",
+    "store": "Archive",
+    "presentation": "Archive",
+    "domain": "Archive",
+    "context": "Generator",
+    "contexts": "Generator",
+    "Preload": "Update",
+    "constants": "Less",
+    "redux": "Redux-store",
+    "SplashScreen": "Storybook",
+    "invalid-param-error": "error",
+    "missing-param-error": "error",
+    "server-error": "error",
+    "http-helper": "helper",
+    "protocols": "node",
+    "usecases": "node",
+    "add-account": "Generator",
+    "account": "Generator"
+  },
+  "editor.minimap.enabled": false,
+  "git.confirmSync": false,
+  "color-highlight.languages": ["*"],
+  "settingsSync.ignoredSettings": [],
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "git.autofetch": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "json.maxItemsComputed": 150000,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false,
+    "editor.defaultFormatter": "Dart-Code.dart-code"
+  },
+  "dart.openDevTools": "flutter",
+  "dart.debugSdkLibraries": false,
+  "editor.accessibilitySupport": "off",
+  "editor.inlineSuggest.enabled": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "security.workspace.trust.untrustedFiles": "open",
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false
+  },
+  "editor.cursorBlinking": "expand",
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "react-native-tools.showUserTips": false,
+  "redhat.telemetry.enabled": true,
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.colorTheme": "Rosé Pine Moon",
+  "window.zoomLevel": -1
+}
