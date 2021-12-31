@@ -2,6 +2,7 @@ import { DbAddAccount } from '.';
 import { AddAccountRepository, Encrypter } from '@data/protocols';
 import { AddAccountModel } from '@domain/usecases';
 import { AccountModel } from '@domain/models';
+import { rejects } from 'assert';
 
 interface SutTypes {
   sut: DbAddAccount;
@@ -85,5 +86,20 @@ describe('DbAddAccount Usecase', () => {
       email: 'valid_email',
       password: 'hashed_password',
     });
+  });
+  test('Should throw if Encrypter throws', async () => {
+    const { sut, addAccountRepositoryStub } = makeSut();
+    jest
+      .spyOn(addAccountRepositoryStub, 'add')
+      .mockReturnValueOnce(
+        new Promise((resolve, reject) => reject(new Error())),
+      );
+    const accountData = {
+      name: 'valid_name',
+      email: 'valid_email',
+      password: 'hashed_password',
+    };
+    const promise = sut.add(accountData);
+    await expect(promise).rejects.toThrow();
   });
 });
