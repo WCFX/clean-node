@@ -11,6 +11,7 @@ module.exports = {
     '@domain/(.*)': '<rootDir>/src/domain/$1',
     '@presentation/(.*)': '<rootDir>/src/presentation/$1',
     '@util/(.*)': '<rootDir>/src/util/$1',
+    '@infra/(.*)': '<rootDir>/src/infra/$1',
   },
   moduleDirectories: ['node_modules', 'src'],
 };
