@@ -2,7 +2,7 @@ module.exports = {
   collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
   roots: ['<rootDir>/src'],
   coverageDirectory: 'coverage',
-  testEnvironment: 'node',
+  preset: '@shelf/jest-mongodb',
   // NOTE: ModulePathIgnorePatterns its a flag to exclude some files who i don't
   // want to show, bcz that files has an propose to exports default files. That's
   // why, I created the script below.
