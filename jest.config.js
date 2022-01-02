@@ -3,6 +3,21 @@ module.exports = {
   roots: ['<rootDir>/src'],
   coverageDirectory: 'coverage',
   testEnvironment: 'node',
+  // NOTE: ModulePathIgnorePatterns its a flag to exclude some files who i don't
+  // want to show, bcz that files has an propose to exports default files. That's
+  // why, I created the script below.
+  modulePathIgnorePatterns: [
+    'src/data/protocols/index.ts',
+    'src/data/usecases/index.ts',
+    'src/domain/models/index.ts',
+    'src/domain/usecases/index.ts',
+    'src/infra/criptography/index.ts',
+    'src/presentation/controllers/index.ts',
+    'src/presentation/errors/index.ts',
+    'src/presentation/helpers/index.ts',
+    'src/presentation/protocols/index.ts',
+    'src/utils/index.ts',
+  ],
   transform: {
     '.+\\.ts?$': 'ts-jest',
   },
