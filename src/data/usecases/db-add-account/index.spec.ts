@@ -2,7 +2,6 @@ import { DbAddAccount } from '.';
 import { AddAccountRepository, Encrypter } from '@data/protocols';
 import { AddAccountModel } from '@domain/usecases';
 import { AccountModel } from '@domain/models';
-import { rejects } from 'assert';
 
 interface SutTypes {
   sut: DbAddAccount;
