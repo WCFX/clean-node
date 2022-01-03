@@ -21,6 +21,7 @@
   "devDependencies": {
     "@commitlint/cli": "^14.1.0",
     "@commitlint/config-conventional": "^14.1.0",
+    "@shelf/jest-mongodb": "^2.0.1",
     "@types/bcrypt": "^5.0.0",
     "@types/jest": "^27.0.2",
     "@types/mongodb": "^4.0.7",
