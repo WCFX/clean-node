@@ -1,4 +1,4 @@
-import { MongoClient } from 'mongodb';
+import { Collection, MongoClient } from 'mongodb';
 
 const MongoHelper = {
   client: null as MongoClient,
@@ -13,6 +13,10 @@ const MongoHelper = {
     await this.client.close();
     this.client = null;
     this.db = null;
+  },
+
+  getColletion(name: string): Collection {
+    return this.client.db().collection(name);
   },
 };
 

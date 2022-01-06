@@ -6,7 +6,7 @@ module.exports = {
   // NOTE: ModulePathIgnorePatterns its a flag to exclude some files who i don't
   // want to show, bcz that files has an propose to exports default files. That's
   // why, I created the script below.
-  transformIgnorePatterns: ['node_modules'],
+  transformIgnorePatterns: ['./node_modules'],
   modulePathIgnorePatterns: [
     'src/data/protocols/index.ts',
     'src/data/usecases/index.ts',
@@ -30,5 +30,4 @@ module.exports = {
     '@util/(.*)': '<rootDir>/src/util/$1',
     '@infra/(.*)': '<rootDir>/src/infra/$1',
   },
-  moduleDirectories: ['node_modules', 'src'],
 };
