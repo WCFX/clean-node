@@ -10,6 +10,11 @@ describe('Account mongo Respoitory', () => {
     await MongoHelper.disconnect();
   });
 
+  beforeEach(async () => {
+    const accountCollection = MongoHelper.getColletion('accounts');
+    await accountCollection.deleteMany({});
+  });
+
   // interface makeSutTypes {
   //   sut: AccountMongoRepository;
 
