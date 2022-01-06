@@ -15,11 +15,6 @@ describe('Account mongo Respoitory', () => {
     await accountCollection.deleteMany({});
   });
 
-  // interface makeSutTypes {
-  //   sut: AccountMongoRepository;
-
-  // }
-
   const makeSut = (): AccountMongoRepository => {
     return new AccountMongoRepository();
   };
