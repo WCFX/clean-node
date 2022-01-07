@@ -11,7 +11,8 @@
       "@domain/*": ["domain/*"],
       "@presentation/*": ["presentation/*"],
       "@util/*": ["util/*"],
-      "@infra/*": ["infra/*"]
+      "@infra/*": ["infra/*"],
+      "@main/*": ["main/*"]
     }
   }
 }
